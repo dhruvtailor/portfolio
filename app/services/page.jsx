@@ -9,25 +9,25 @@ const services = [
         num: '01',
         title: 'Android Development',
         description: 'Expert in developing robust and user-friendly Android applications using Kotlin and Java, with experience in GPS tracking, trip booking, and fare collection apps.',
-        href: ''
+        href: '/contact'
     },
     {
         num: '02',
         title: 'iOS Development',
         description: 'Specialized in creating intuitive and seamless iOS applications using Swift and SwiftUI, focusing on user experience and functionality.',
-        href: ''
+        href: '/contact'
     },
     {
         num: '03',
         title: 'Web Development',
         description: 'Specialized in creating intuitive and seamless iOS applications using Swift and SwiftUI, focusing on user experience and functionality.',
-        href: ''
+        href: '/contact'
     },
     {
         num: '04',
         title: 'API Development',
         description: 'Proficient in developing efficient and scalable APIs, integrating RESTful services and external APIs to enhance application functionality.',
-        href: ''
+        href: '/contact'
     },
 ]
 
