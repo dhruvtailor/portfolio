@@ -45,21 +45,21 @@ const Contact = () => {
                         <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-accent">Let's work together</h3>
                             <p className="text-white/60">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe veniam quasi explicabo sint voluptates!
+                                Let's collaborate to bring your ideas to life!
                             </p>
-                            
+
                             {/* input */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <Input type="firstname" placeholder="Firstname"/>
-                                <Input type="lastname" placeholder="Lastname"/>
-                                <Input type="email" placeholder="Email address"/>
-                                <Input type="phone" placeholder="Phone number"/>
+                                <Input type="firstname" placeholder="Firstname" />
+                                <Input type="lastname" placeholder="Lastname" />
+                                <Input type="email" placeholder="Email address" />
+                                <Input type="phone" placeholder="Phone number" />
                             </div>
 
                             {/* select */}
                             <Select>
                                 <SelectTrigger className="w-full">
-                                    <SelectValue placeholder="Select a service"/>
+                                    <SelectValue placeholder="Select a service" />
                                 </SelectTrigger>
                                 <SelectContent>
                                     <SelectGroup>
@@ -71,13 +71,13 @@ const Contact = () => {
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
-                            
+
                             {/* textarea */}
-                            <Textarea 
+                            <Textarea
                                 className="h-[200px]"
                                 placeholder="Type your message here."
                             />
-                            
+
                             {/* btn */}
                             <Button size="md" className="max-w-40">Send message</Button>
                         </form>

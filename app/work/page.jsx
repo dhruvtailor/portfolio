@@ -17,43 +17,33 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
     {
         num: '01',
-        category: 'frontend',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eos odio.',
-        stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
-        image: '/assets/work/thumb1.png',
+        category: 'android',
+        title: 'GPS Tracking App',
+        description: 'A mobile application for real-time GPS tracking, providing users with accurate location updates and navigation features.',
+        stack: [{ name: 'Java' }, { name: 'Firebase' }, { name: 'Google Maps API' }],
+        image: '/assets/work/gps_tracking_app.png',
         live: '',
         github: '',
     },
     {
         num: '02',
-        category: 'frontend',
-        title: 'project 1',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eos odio.',
-        stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
-        image: '/assets/work/thumb1.png',
-        live: '',
-        github: '',
-    },
-    {
-        num: '02',
-        category: 'fullstack',
-        title: 'project 2',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eos odio.',
-        stack: [{ name: 'Next.js' }, { name: 'Tailwind.css' }, { name: 'Node.js' }],
-        image: '/assets/work/thumb2.png',
+        category: 'android',
+        title: 'Trip Booking App',
+        description: 'A user-friendly trip booking application that allows users to schedule and manage their travel plans effortlessly.',
+        stack: [{ name: 'Java' }, { name: 'SQLServer' }, { name: 'Retrofit' }],
+        image: '/assets/work/trip_booking_app.png',
         live: '',
         github: '',
     },
     {
         num: '03',
-        category: 'frontend',
-        title: 'project 3',
-        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque eos odio.',
-        stack: [{ name: 'Html 5' }, { name: 'Css 3' }, { name: 'Javascript' }],
-        image: '/assets/work/thumb3.png',
+        category: 'iOS',
+        title: 'NatureWalk App',
+        description: 'Developed NatureWalk, a mobile app that encourages users to explore nature trails, providing detailed trail information, GPS navigation, and the ability to log hikes.',
+        stack: [{ name: 'Swift' }, { name: 'Firebase' }, { name: 'MapKit' }],
+        image: '/assets/work/naturewalk_app.png',
         live: '',
-        github: '',
+        github: 'https://github.com/dhruvtailor/NatureWalk',
     },
 ]
 
@@ -74,7 +64,7 @@ const Work = () => {
                 opacity: 1, 
                 transition: {delay: 2.4, duration: 0.4, ease:'easeIn'} 
             }}
-            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+            className="min-h-[70vh] flex flex-col justify-center py-12 xl:px-0"
         >
             <div className="container mx-auto">
                 <div className="flex flex-col xl:flex-row xl:gap-[30px]">

@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 // about data
 const about = {
   title: 'About me',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem animi saepe incidunt',
+  description: 'Experienced professional with a strong background in mobile app development.',
   info: [
     {
       fieldName: 'Name',
@@ -25,7 +25,7 @@ const about = {
     },
     {
       fieldName: 'Experience',
-      fieldValue: '5 Years'
+      fieldValue: '5+ Years'
     },
     {
       fieldName: 'Github',
@@ -55,7 +55,7 @@ const about = {
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem animi saepe incidunt',
+  description: 'Skilled in mobile app development for Android and iOS, with a focus on designing, developing, and deploying efficient applications, as well as troubleshooting and API integration.',
   items: [
     {
       company: "Flexit Inventions",
@@ -74,7 +74,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem animi saepe incidunt',
+  description: 'Experienced in mobile app development with a strong foundation in both Android and iOS platforms.',
   items: [
     {
       institution: "Grorge Brown College",
@@ -92,7 +92,7 @@ const education = {
 //skills data
 const skills = {
   title: 'My skills',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quidem animi saepe incidunt',
+  description: 'Proficient in a variety of programming languages and development tools, specializing in mobile and web applications.',
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -145,7 +145,7 @@ const Resume = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' }
       }}
-      className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
+      className='min-h-[70vh] flex items-center justify-center py-12 xl:py-0'
     >
       <div className="container mx-auto">
         <Tabs
@@ -170,7 +170,7 @@ const Resume = () => {
                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
                   {experience.description}
                 </p>
-                <ScrollArea className='h-[400px]'>
+                <ScrollArea className='h-[350px]'>
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                     {experience.items.map((item, index) => {
                       return (
@@ -197,7 +197,7 @@ const Resume = () => {
                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
                   {education.description}
                 </p>
-                <ScrollArea className='h-[400px]'>
+                <ScrollArea className='h-[350px]'>
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                     {education.items.map((item, index) => {
                       return (
@@ -227,10 +227,11 @@ const Resume = () => {
               <div className="flex flex-col gap-[30px]">
                 <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                   <h3 className='text-4xl font-bold'>{skills.title}</h3>
-                  <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
+                  <p className='max-w-[650px] text-white/60 mx-auto xl:mx-0'>
                     {skills.description}
                   </p>
                 </div>
+                {/* <ScrollArea className='h-[380px]'> */}
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]'>
                   {skills.skillList.map((skill, index) => {
                     return <li key={index}>
@@ -249,6 +250,7 @@ const Resume = () => {
                     </li>;
                   })}
                 </ul>
+                {/* </ScrollArea> */}
               </div>
             </TabsContent>
 

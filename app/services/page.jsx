@@ -8,32 +8,32 @@ const services = [
     {
         num: '01',
         title: 'Android Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo.',
+        description: 'Expert in developing robust and user-friendly Android applications using Kotlin and Java, with experience in GPS tracking, trip booking, and fare collection apps.',
         href: ''
     },
     {
         num: '02',
         title: 'iOS Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo.',
+        description: 'Specialized in creating intuitive and seamless iOS applications using Swift and SwiftUI, focusing on user experience and functionality.',
         href: ''
     },
     {
         num: '03',
         title: 'Web Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo.',
+        description: 'Specialized in creating intuitive and seamless iOS applications using Swift and SwiftUI, focusing on user experience and functionality.',
         href: ''
     },
     {
         num: '04',
         title: 'API Development',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo.',
+        description: 'Proficient in developing efficient and scalable APIs, integrating RESTful services and external APIs to enhance application functionality.',
         href: ''
     },
 ]
 
 const Services = () => {
     return (
-        <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
+        <section className="min-h-[70vh] flex flex-col justify-center py-12 xl:py-0">
             <div className="container mx-auto">
                 <motion.div
                     initial={{ opacity: 0 }}
