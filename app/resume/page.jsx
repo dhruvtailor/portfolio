@@ -1,6 +1,6 @@
 "use client";
 
-import { Duru_Sans } from 'next/font/google';
+import Link from "next/link";
 import { FaHtml5, FaSwift, FaJs, FaReact, FaAndroid, FaNodeJs } from 'react-icons/fa'
 import { SiAndroidstudio, SiXcode, SiAdobephotoshop, SiCoreldraw } from 'react-icons/si'
 
@@ -47,7 +47,7 @@ const about = {
       fieldName: 'Linked In',
       fieldValue: 'https://www.linkedin.com/in/dhruv-tailor/'
     },
-    
+
   ]
 }
 
@@ -77,14 +77,18 @@ const education = {
   description: 'Experienced in mobile app development with a strong foundation in both Android and iOS platforms.',
   items: [
     {
-      institution: "Grorge Brown College",
+      institution: "George Brown College",
       degree: "Mobile Application Development and Strategy",
-      duration: "2024-Present"
+      duration: "2024-Present",
+      gpa: 4.0,
+      href: '/assets/transcript/Georgebrown_Transcript.pdf'
     },
     {
       institution: "Gujarat Technological University",
       degree: "Bachelor in Computer Science",
-      duration: "2013-2017"
+      duration: "2013-2017",
+      gpa: 7.89,
+      href: '/assets/transcript/Dhruv_Tailor_BE_Transcript.pdf'
     },
   ]
 }
@@ -203,7 +207,7 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className='bg-[#232329] h-[200px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'
+                          className='bg-[#232329] h-[280px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'
                         >
                           <span className='text-accent'>{item.duration}</span>
                           <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>
@@ -214,6 +218,18 @@ const Resume = () => {
                             <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
                             <p className='text-white/60'>{item.institution}</p>
                           </div>
+                          <div className='flex items-center gap-3'>
+                            {/* dot */}
+                            <span className='w-[6px] h-[6px] rounded-full bg-accent'></span>
+                            {
+                            (index === 0) ?
+                            <p className='text-white/60'>GPA: {item.gpa}</p>:
+                            <p className='text-white/60'>CGPA: {item.gpa}</p>
+                          }
+                          </div>
+                          <Link href={item.href} target="_blank" className='text-white hover:text-accent underline mt-2'>
+                            View Transcript
+                          </Link>
                         </li>
                       );
                     })}
