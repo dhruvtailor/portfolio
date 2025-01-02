@@ -13,7 +13,7 @@ const jetBrainsMono = JetBrains_Mono({
  });
 
 export const metadata = {
-  title: "Dhruv Tailor Portfolio",
+  title: "Dhruv Tailor",
   description: "Dhruv Tailor Portfolio Website",
 };
 
