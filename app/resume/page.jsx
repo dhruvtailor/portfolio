@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { FaHtml5, FaSwift, FaJs, FaReact, FaAndroid, FaNodeJs } from 'react-icons/fa'
-import { SiAndroidstudio, SiXcode, SiAdobephotoshop, SiCoreldraw } from 'react-icons/si'
+import { FaHtml5, FaSwift, FaJs, FaReact, FaAndroid, FaNodeJs, FaPython } from 'react-icons/fa'
+import { SiAndroidstudio, SiXcode, SiAdobephotoshop, SiCoreldraw, SiJupyter } from 'react-icons/si'
 
 // components
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -37,7 +37,7 @@ const about = {
     },
     {
       fieldName: 'Email',
-      fieldValue: 'dhruv.tailor@georgebrown.ca'
+      fieldValue: 'dhruv.tailor007@gmail.com'
     },
     {
       fieldName: 'Languages',
@@ -77,9 +77,16 @@ const education = {
   description: 'Experienced in mobile app development with a strong foundation in both Android and iOS platforms.',
   items: [
     {
+      institution: "Humber College",
+      degree: "Data Analytics",
+      duration: "2025-Present",
+      gpa: 4.0,
+      href: '/assets/transcript/Georgebrown_Transcript.pdf'
+    },
+    {
       institution: "George Brown College",
       degree: "Mobile Application Development and Strategy",
-      duration: "2024-Present",
+      duration: "2024-2025",
       gpa: 4.0,
       href: '/assets/transcript/Georgebrown_Transcript.pdf'
     },
@@ -137,6 +144,14 @@ const skills = {
     {
       icon: <SiCoreldraw />,
       name: 'corel-draw'
+    },
+    {
+      icon: <FaPython />,
+      name: 'python'
+    },
+    {
+      icon: <SiJupyter />,
+      name: 'jupyter'
     },
   ]
 }
@@ -201,7 +216,7 @@ const Resume = () => {
                 <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>
                   {education.description}
                 </p>
-                <ScrollArea className='h-[350px]'>
+                <ScrollArea className='h-[600px]'>
                   <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                     {education.items.map((item, index) => {
                       return (
