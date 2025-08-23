@@ -29,6 +29,18 @@ const services = [
         description: 'Proficient in developing efficient and scalable APIs, integrating RESTful services and external APIs to enhance application functionality.',
         href: '/contact'
     },
+    {
+        num: '05',
+        title: 'IoT Development',
+        description: 'Skilled in designing and developing Internet of Things (IoT) solutions, including device integration, sensor data collection, and smart automation systems.',
+        href: '/contact'
+    },
+    {
+        num: '06',
+        title: 'Data Analayst',
+        description: 'Skilled in analyzing datasets and applying Machine Learning to uncover insights, build predictive models, and support data-driven decisions using Python and SQL.',
+        href: '/contact'
+    }
 ]
 
 const Services = () => {

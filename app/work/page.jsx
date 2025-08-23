@@ -45,6 +45,16 @@ const projects = [
         live: '',
         github: 'https://github.com/dhruvtailor/NatureWalk',
     },
+    {
+        num: '04',
+        category: 'Data Analytics',
+        title: 'Game Review Sentiment Analysis',
+        description: 'Developed sentiment analysis for game reviews to classify review in Positive, Negative and Neutral reviews using Machine Learning in python.',
+        stack: [{ name: 'Python' }, { name: 'Flask' }, { name: 'Scikit-Learn' }],
+        image: '/assets/work/gamereview_app.png',
+        live: 'https://game-review-sentiment.onrender.com',
+        github: 'https://github.com/dhruvtailor/Game-Review-Sentiment',
+    }
 ]
 
 const Work = () => {

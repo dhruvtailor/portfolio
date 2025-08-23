@@ -18,7 +18,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Dhruv Tailor</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences, with a strong background in developing intuitive, user-centric mobile apps and I am Proficient in various technologies.
+              As a Mobile Developer and Data Analyst, I focus on building user-friendly applications and leveraging data to solve real-world problems, continuously learning and exploring new technologies to stay ahead.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
