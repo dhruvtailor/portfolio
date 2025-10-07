@@ -37,7 +37,7 @@ const services = [
     },
     {
         num: '06',
-        title: 'Data Analayst',
+        title: 'Data Analysis',
         description: 'Skilled in analyzing datasets and applying Machine Learning to uncover insights, build predictive models, and support data-driven decisions using Python and SQL.',
         href: '/contact'
     }
