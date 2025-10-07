@@ -134,6 +134,8 @@ const Contact = () => {
                                         <SelectItem value="iOS Development">iOS Development</SelectItem>
                                         <SelectItem value="Web Development">Web Development</SelectItem>
                                         <SelectItem value="API Development">API Development</SelectItem>
+                                        <SelectItem value="IoT Development">IoT Development</SelectItem>
+                                        <SelectItem value="Data Anlayst">Data Analyst</SelectItem>
                                     </SelectGroup>
                                 </SelectContent>
                             </Select>
